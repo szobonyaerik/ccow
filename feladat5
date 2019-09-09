@@ -1,0 +1,6 @@
+koronás5 = float(input("Enter how many 5 crown do you have: "))
+koronás2 = float(input("Enter how many 2 crown do you have: "))
+koronás1 = float(input("Enter how many 1 crown do you have: "))
+
+money_we_have = koronás5*5 + koronás2*2 +koronás1
+print("We have {} crown!".format(money_we_have))
