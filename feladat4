@@ -1,0 +1,6 @@
+number = float(input("Enter a number: "))
+multi = 0
+print("")
+while multi <= 5:
+    print(multi * number)
+    multi += 1
