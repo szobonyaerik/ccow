@@ -1,0 +1,11 @@
+value = int(input("Enter a value: "))
+
+value10 = value // 10
+rest1 = value % 10
+value5 = rest1 // 5
+rest2 = rest1 % 5
+value2 = rest2 // 2
+rest3 = rest2 % 2
+value1 = rest3 // 1
+
+print("We need {} ten crowns, {} five crowns, {} two crowns and {} one crowns.".format(value10, value5, value2, value1))
