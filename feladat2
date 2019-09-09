@@ -1,0 +1,20 @@
+time1 = int(input("Tell me a hour: "))
+time2 = int(input("Tell me the a minute: "))
+time3 = int(input("Tell me a seconds: "))
+
+first_all_seconds = 3600*time1 + 60*time2 + time3
+print(first_all_seconds)
+
+time1 = int(input("Tell me a hour: "))
+time2 = int(input("Tell me the a minute: "))
+time3 = int(input("Tell me a seconds: "))
+
+second_all_seconds = 3600*time1 + 60*time2 + time3
+print(second_all_seconds)
+
+between = abs(first_all_seconds-second_all_seconds)
+
+if time1 >=0 and time1 <=24 and time2 >=0 and time2 <=60 and time3 >=0 and time3 <=60:
+    print("{} seconds are between the two time!".format(between))
+else:
+    print("Not a valid value!")
