@@ -1,0 +1,23 @@
+abc = [ "a" ,"b" ,"c" ,"d" ,"e" ,"f" ,"g" ,"h" ,"i" ,"j" ,"k" ,"l" ,"m" ,"n" ,"o" ,
+"p" ,"q" ,"r" ,"s" ,"t" ,"u" ,"v" ,"w" ,"x" ,"y" ,"z" ,"A" ,"B" ,"C" ,"D" ,"E" ,"F" ,"G" ,"H" , "I" ,
+"J" ,"K" ,"L" ,"M" ,"N" ,"O" ,"P" ,"Q" , "R" , "S" , "T" , "U" , "V" , "W" , "X" , "Y" , "Z"]
+
+ms = input("Enter a word: ")
+final = ""
+
+
+for i in range(len(abc)):
+    word = abc[i]
+    for code in ms:
+        if word == code:
+            final += abc[i+3]
+            break
+
+
+
+
+
+print(final)
+
+
+#ha két egyforma betű van benne akkor nem működik a kód, meg lehet-e oldani ezzel a módszerrel??
