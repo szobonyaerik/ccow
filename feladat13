@@ -1,0 +1,10 @@
+number = int(input("Enter a number: "))
+sor = 2
+szam = 1
+matek = 1
+while sor <= number:
+    print(szam)
+    print(matek)
+    szam = szam+matek
+    matek = szam+matek
+    sor += 2
