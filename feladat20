@@ -1,0 +1,8 @@
+mondat = input("Enter a sentence: ")
+szokozszam = 0
+for karakter in mondat:
+    if karakter == " ":
+        szokozszam += 1
+    else:
+        szokozszam = szokozszam
+print(szokozszam)
