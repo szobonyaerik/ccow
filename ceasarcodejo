@@ -1,0 +1,6 @@
+word = input("Enter a word: ")
+
+for i in range(len(word)):
+    asci = ord(word[i])
+    asci = asci + 3
+    print(chr(asci), end = ' ')
