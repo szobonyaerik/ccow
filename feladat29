@@ -1,0 +1,8 @@
+a = int(input("Enter a number: "))
+b = int(input("Enter a number: "))
+c = int(input("Enter a number: "))
+
+if a*a + b*b == c*c or  a*a + c*c == b*b or  c*c + b*b == a*a:
+    print("Ez egy derékszögű háromszög.")
+else:
+    print("Ez nem lehet derékszögű háromszög.")
