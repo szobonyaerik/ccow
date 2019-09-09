@@ -1,0 +1,16 @@
+n = int(input("Enter a number: "))
+odd = 0
+even = 0
+sum = 0
+
+for i in range(1, n+1):
+    number= int(input("Enter a number: "))
+    print(number)
+    if number%2==0:
+        even += 1
+    else:
+        odd += 1
+        sum += number
+
+print("There are {} even numbers and {} odd numbers.".format(even, odd))
+print("{} is the sum of the even numbers.".format(sum))
