@@ -1,0 +1,6 @@
+def reverse_sentence():
+    sentence = input("Enter a sentence: ")
+    t = sentence[:: -1]
+    print(t)
+
+reverse_sentence()
