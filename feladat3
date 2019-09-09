@@ -1,0 +1,11 @@
+number1 = int(input("Enter a natural number: "))
+number2 = int(input("Enter a natural number: "))
+
+quotient = number1 / number2
+rest = number1 % number2
+
+if number1 >= 0 and number2 >=0:
+    print("")
+    print("The quotient is {} and the rest is {}.".format(quotient,rest))
+else:
+    print("The numbers have to be natural!!!")
