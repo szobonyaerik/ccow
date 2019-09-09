@@ -1,0 +1,20 @@
+m = [[1, 3, "A"],["B", "A", "C"],[9, "B", 4]]
+n = [[1, "A", "A"],["B", "B", "C"],[4, "A", "C"]]
+
+
+
+
+letters = {}
+
+for i in m:
+    for l in i:
+        if type(l) == str:
+            letters[l] = letters.get(l,0)+1
+
+for j in range(len(n)):
+    for x in range(len(n[j])):
+        letter = n[j][x]
+        if letter in letters:
+            n[j][x] = letters[letter]
+
+print(n)
