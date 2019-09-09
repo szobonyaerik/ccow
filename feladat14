@@ -1,0 +1,15 @@
+number = int(input("Enter a number: "))
+sor = 2
+szam = 1
+matek = 1
+összeg = 0
+while sor <= number:
+    print(szam)
+    print(matek)
+    összeg = összeg+szam+matek
+    szam = szam+matek
+    matek = szam+matek
+    sor += 2
+
+print("")
+print("Az első {} Fibonecci szám összege {}.".format(number,összeg))
