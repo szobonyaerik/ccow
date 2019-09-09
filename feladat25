@@ -1,0 +1,10 @@
+sentence = input("Enter a sentnce: ")
+word = ""
+
+for index in range(len(sentence)):
+    if sentence[index] == "<":
+        while sentence[index + 1] != ">":
+            index += 1
+            word += sentence[index]
+        print(word)
+        word = ""
