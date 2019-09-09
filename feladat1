@@ -1,0 +1,8 @@
+prize= float(input("How much is a kilo appla? "))
+weight= float(input("How much kilogramm apple do you want to you buy? "))
+final = weight*prize
+
+if final >= 0:
+    print("You have to pay {} crown!".format(final))
+else:
+    print("Not a valid value!")
