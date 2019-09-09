@@ -1,0 +1,25 @@
+t = int(input("Enter a year: "))
+
+a = t % 19
+print(a)
+b = t % 4
+print(b)
+c = t % 7
+print(c)
+d = (19 * a + 24) % 30
+print(d)
+e = (2 * b + 4 * c + 6 * d + 5) % 7
+print(e)
+h = 22 + d + e
+print(h)
+
+if e == 6 and d == 29:
+    print("Húsvét vasárnap április 19.")
+elif e == 6 and d == 28 and a > 10:
+    print("Húsvét vasárnap április 18.")
+else:
+    if h <= 31:
+        print("Húsvét vasárnap az március {}.".format(h))
+    else:
+        n = h - 31
+        print("Húsvét vasárnap az április {}.".format(n))
