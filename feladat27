@@ -1,0 +1,12 @@
+n = int(input("Enter a number: "))
+min = 500000000000000
+max = 0
+for number in range(1, n+1):
+    new = int(input("Enter a number: "))
+    if min > new:
+        min = new
+    if max < new:
+        max = new
+
+print(min)
+print(max)
